@@ -1,0 +1,38 @@
+/* This is a comment in css language, which modifies the properties and appearance of an html tag */
+/* first we insert the html tag to modify */
+/* HTML TAG TO MODIFY { property to modify followed by ":" for each property
+there are allowed and not allowed values ​​(color: modifies the color of a text)
+allowed values: (' colors in English, #135355 hexadecimal encoding, RGB encoding, RGBA encoding)
+then we insert the ; to close the statement */
+
+body {color:darkturquoise;
+     /* background-color changes the background color of an object */
+      
+} 
+
+/* adds a transparent background to an object */
+    
+#alberto {
+        background-color:transparent;
+}
+
+/* If we choose the rgb encoding, we indicate 
+between brackets (amount of red (255), green (255) and ,blue)*/
+h1 {
+   
+   background-color: rgb(20, 116, 46); 
+
+}
+/* hexadecimal colors */
+p {
+    background-color: #873e23;
+
+
+}
+
+/* bakground-color allows rgb encoding plus alpha channel (i.e. a value between 0 and 1) that indicates the % of transparency */
+.romeo {
+   
+   background-color: rgba(44,334,55,0.2);
+
+}   
