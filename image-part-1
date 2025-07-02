@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallpaper image</title>
+
+<style>
+div {
+/* the width of an object is best indicated in % so that it adapts to different screens */ 
+    width: 100%;
+
+/* the height must be indicated in pixels */
+    height: 250px;
+    color: white;
+
+/* applying an image background add the url
+(inside the url you must insert the image path
+including the extension) */
+
+   background-image: url(https://cdn.pixabay.com/photo/2025/06/14/17/27/nature-9659850_960_720.jpg);
+
+ /* Properties dependent on a main property
+for example background position indicates the area of ​​the image
+to be displayed admits one or two values ​​such as:
+left;
+right;
+bottom;
+center; */
+background-position: top left;
+
+/* We can also resize a background for example with
+background size (allowed values)
+height and height*/
+background-size: 200px 200px ; 
+
+/* attach the image to a specific edge
+fixed (attach the background to the top left corner)
+scroll (stretches to its maximum height and width)*/
+background-attachment: fixed;
+
+}
+
+
+
+</style>
+</head>
+<body>
+       <h1>Lavorare con le sfumature</h1>
+    <div>Blocco uno</div>
+    
+</body>
+</html>
