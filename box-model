@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+     <style>
+    /* reset of body*/
+    body{margin: 0px;
+        padding: 0px;
+        font-family:sans-serif;
+       
+    }
+    .containerone{
+        background-color: blanchedalmond;
+        width:300px;
+        height:80px;
+    /* padding margnification of the content
+    1.parameter adds thickness in the 4 sides padding 5px
+        padding:5px;*/
+
+    /*2. parameters(top-bottom)(left-right)
+    padding:5px 20px;*/
+
+    /*3.parameters(top,left-right,bottom)
+    padding:0px 10px 30px;*/
+
+    /*4.parameters(top,right,bottom.left)*/
+    padding:0px 10px 30px 20px;
+    /*border in short code*/
+    border:6px solid blue;
+     /*center displacment of an object margin auto displacment object centre of the page*/
+     margin: auto;
+    }
+   
+    
+
+    .containerone h2{
+        background-color: green;
+    }
+
+    .containertwo{
+        background-color: chocolate;
+        width:300px;
+        height:80px;
+        padding-top:10;
+        padding-right:20px;
+        padding-bottom:30px;
+        padding-left:20px;
+        border-width: 6px;
+        border-style: solid;
+        border-color: blue;
+        /*margin: 20px 20px 30px 10px;*/
+        /*we can also use single margin like margin top and left mostly used to move object*/
+        margin-top: 40px;
+        margin-left: 60px;
+        /*margin right and bottom are useless to move object in the page*/
+        margin-bottom: 400px;
+        margin-right:30px;
+    }
+
+    .containerone h2{
+        background-color: green;
+    }
+
+   /*IMPORTANT THE LAYOUT IN THE BOX MODEL IS NOT COMPATIBLE WITH THE FOLLOWING LAYOUTS:
+   POSITION:(margins are replaced with top,left,bottom,right);
+   DISPLAY FLEX(margins are incompatible);
+   GRID DISPLAY(margins are incompatible)
+   INLINE DISPLAY(limited compatibility)*/
+
+    </style>
+</head>
+<body>
+    <h1>Layout of Box model</h1>
+    <!--html of container one-->
+    <div class="containerone">
+        <h2>Contain</h2>
+
+    </div>
+
+    <br>
+     <!--html of container two-->
+    <div class="containertwo">
+        <h2>Contain</h2>
+
+    </div>
+   
+</body>
+</html>
