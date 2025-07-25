@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important use of html characters</title>
+<style>
+/*Import/Installation of characters*/
+    @font-face {
+        font-family:"Meravila-Regular";
+/*always remember to enter file names with extensions*/
+        src: url(font/Meravila-Regular.ttf);
+    }
+
+/*Use of Installed character */
+    h1{
+        font-family: meravila-regular;
+        text-align: center;
+    }
+/*use of google character*/
+    section{
+        font-family: "Bitcount Prop Single";
+/*Subdivision of paragraph in columns*/
+     column-count:3;
+/*this the use to add gaps in the column*/
+     column-gap:50px;
+/*to adjust the column */
+     column-fill: balance;
+/*it has to indicate with the persentege*/
+     column-width :50%;
+/*it gives a line between the columns*/
+    column-rule-style: solid;
+    column-rule-color: brown;
+    column-rule-width: 5px;
+    column-span: all;
+
+    }
+/*to make headline we use column span we use we have applly section container and then apply column span */
+    h2{
+        column-span: all;
+        color:brown;
+    }
+    
+
+    
+</style>
+<!---Iport charater from google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <h1>Working with fonts</h1>
+<section>
+    <h2>Column spans</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga veniam enim dicta, adipisci expedita vel architecto ratione placeat minus asperiores odit exercitationem consequatur! Ex incidunt quod eius ipsum temporibus?</p>
+     <!--<img src="https://cdn.pixabay.com/photo/2024/11/17/04/52/chilli-9202873_1280.jpg">-->
+ </section>
+</body>
+</html>
