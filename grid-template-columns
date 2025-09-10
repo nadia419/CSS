@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+          * {box-sizing: border-box;
+}
+body {padding: 0px;
+      margin: 5px;
+}
+
+        h1{
+            color: rgb(113, 113, 242);
+        }
+/* 1.first to have make is page a layout grid for that we have to choses the display to be a grid
+   2. here we can make this divs into 3 rows useing auto 3 times or using persentage like 30% of 70% for one div*/
+        .mainbox{
+            background-color:transparent;
+            display:grid;
+            grid-template-columns:auto auto;
+            column-gap: 5px;
+            row-gap: 5px;
+           
+           
+
+        }
+
+        .box1{
+            background-color: brown;
+            padding: 5px;
+            border-radius: 20px;
+            /* so here 1 means one item you have selected then / you choses how many box you like to occupy here 2 means 2 box */
+            grid-column:1 /2 span;
+        }
+
+         .box2{
+            background-color: rgb(251, 68, 68);
+            padding: 5px;
+            border-radius: 20px;
+            /* so here 2 is box 2 that you have selected box 2 and 2 span means you have comand to take 2 box space*/
+            grid-row: 2/ 2 span;
+        }
+        .box3{
+            background-color: rgb(244, 112, 112);
+            padding: 5px;
+            border-radius: 20px;
+        }
+         .box4{
+            background-color: rgb(211, 138, 138);
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Layout </h1>
+    <div class="mainbox">
+        <div class="box1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam commodi quis itaque quod nesciunt corporis quaerat saepe fugit voluptate placeat, molestias facilis? Sunt obcaecati inventore ea! Laborum, laudantium numquam?
+        </div>
+
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit commodi nemo laboriosam culpa sapiente incidunt ipsam, corporis at quidem id mollitia laudantium fugiat natus nihil ad sequi aliquid, dolor aspernatur!
+        </div>
+
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus perspiciatis ab id necessitatibus nobis quidem, inventore sunt iusto qui dicta quasi magnam harum officia ratione saepe? Tempore, ex assumenda.
+        </div>
+         <div class="box4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus perspiciatis ab id necessitatibus nobis quidem, inventore sunt iusto qui dicta quasi magnam harum officia ratione saepe? Tempore, ex assumenda.
+        </div>
+        
+    </div>
+    
+</body>
+</html>
