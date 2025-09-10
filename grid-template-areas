@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+          * {box-sizing: border-box;
+}
+body {padding: 0px;
+      margin: 5px;
+}
+
+        h1{
+            color: rgb(113, 113, 242);
+        }
+/* 1.first to have make is page a layout grid for that we have to choses the display to be a grid
+   2. here we can make this divs into 3 rows useing auto 3 times or using persentage like 30% of 70% for one div*/
+        .mainbox{
+            background-color:transparent;
+            display:grid;
+            row-gap: 5px;
+            column-gap: 5px;
+           
+/* For more complex layouts, we can define the layout model */
+/* First, I give each element a grid area property with grid-area: a b etc.
+And then I define the area to be occupied by each element */
+ grid-template-areas: 
+                      "a a a"
+                      "b c c"
+                      "b d d"
+                      ;   
+                      
+           
+
+        }
+
+        .box1{
+            background-color: brown;
+            padding: 5px;
+            border-radius: 20px;
+            grid-area: a;
+           
+        }
+
+         .box2{
+            background-color: rgb(251, 68, 68);
+            padding: 5px;
+            border-radius: 20px;
+            grid-area: b;
+            
+        }
+        .box3{
+            background-color: rgb(244, 112, 112);
+            padding: 5px;
+            border-radius: 20px;
+            grid-area: c;
+        }
+         .box4{
+            background-color: rgb(211, 138, 138);
+            padding: 5px;
+            border-radius: 20px;
+            grid-area: d;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Layout </h1>
+    <div class="mainbox">
+        <div class="box1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam commodi quis itaque quod nesciunt corporis quaerat saepe fugit voluptate placeat, molestias facilis? Sunt obcaecati inventore ea! Laborum, laudantium numquam?
+        </div>
+
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit commodi nemo laboriosam culpa sapiente incidunt ipsam, corporis at quidem id mollitia laudantium fugiat natus nihil ad sequi aliquid, dolor aspernatur!
+        </div>
+
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus perspiciatis ab id necessitatibus nobis quidem, inventore sunt iusto qui dicta quasi magnam harum officia ratione saepe? Tempore, ex assumenda.
+        </div>
+         <div class="box4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus perspiciatis ab id necessitatibus nobis quidem, inventore sunt iusto qui dicta quasi magnam harum officia ratione saepe? Tempore, ex assumenda.
+        </div>
+        
+    </div>
+    
+</body>
+</html>
