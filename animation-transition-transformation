@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*transformation n transition*/
+     .box{
+        background-color: rgb(239, 239, 68);
+        width: 25%;
+        height: 100px;
+        margin: auto;
+        border-radius: 20px;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        /* transform scale help the box to make it bigger from all the 4 angles of the box transform: scale(0.5);*/
+       
+        /* in transition you have to put the css that we want to do transition in + and then the time of the transition in second or micro second and hover in mendatory  other wise the trasition will not work */
+        transition: width 1s ,background-color 1s,transform 2s;
+        transition-delay: 1s;
+        transition-duration: o.5s;
+        transition-timing-function: ease-out;
+     }
+    .box:hover{
+        /*here scale number is how many time we want the hover to lust we can also make in box larger by whidth only using scale y and hight by scaley and scalez for depth of the box scale3d(2,4,0.5) here we can use all together like (y,x,z) transform: scale(0.8) */
+       width: 60%;
+       background-color: brown;
+       transform: rotate(360deg) scale(0.5);
+    }
+    /*animation*/
+     .box2{
+        background-color: rgb(8, 238, 112);
+        width: 25%;
+        height: 100px;
+        margin: auto;
+        border-radius: 20px;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        animation-name: movimento;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-fill-mode:forwards;
+
+     }
+     /*using kay frames animation starts to work*/
+     @keyframes movimento{
+        from{width:25%;
+            margin-left: -50%;
+        
+        }
+
+        to{width:50%;
+            margin-left: 50%;
+            transform: rotate(90deg);
+            background-color: brown;
+            font-size: 20pt;
+
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Transformation N Transition</h3>
+    <div class="box">
+        <p>ciao</p>
+    </div>
+    <h3>CSS Animation</h3>
+    <div class="box2">
+        <p>ciao</p>
+</body>
+</html>
