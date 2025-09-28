@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {padding: 0px;
+      margin: 0px;
+}
+     img{
+        border-radius:15px;
+        /* here the deviation is x,y and blurs and shadow color*/
+        box-shadow:1px 1px 1px black;
+        /*filter on the img blur to make im blur and brightness to make it more brighter
+        brightness max is (1-10)
+        contrast is (1-10)
+        box shadow is
+        box shadow is for outside and drop shadow is for inside (3/4 values ​​including color)
+        saturate (1-10) increases the amount of colors
+        invert() creates a negative effect
+        hue rotate(0deg) changes the image's hue by choosing a rotation angle.
+        sepia() applies a sepia effect.
+        opacity (70%) */
+        filter:hue-rotate(240deg)sepia() opacity(70%);
+        /* Applying layers with z-index: -1 puts the image in the background
+          0 is.the default layer, 1 and 2 are for the upper layers
+         (Note: the upper layers vary depending on some contexts*/
+        z-index: 0;
+        padding: 2px;
+        margin: 2px;
+        width: 50%;
+        height: 150px;
+     }
+     img:hover{filter: grayscale(0) saturate();
+       
+     }
+     .text{margin-top: -50px;
+        background-color: aliceblue;
+        padding: 5px;
+
+     }
+
+    
+        
+    section{
+        background-image: url(https://cdn.pixabay.com/photo/2025/07/26/21/13/daisies-9737623_1280.jpg);
+        width:100%;
+        background-size:cover;
+        /* with min height: change the minimum height */
+         min-height:400px;
+         /* proper background combination to get parallax */
+         background-attachment: fixed;
+      /* Hypothesis A 
+         background-position: top;
+         background-size:100% 300px; */
+      /* Hypothesis B */
+         background-position:center;
+        
+         background-repeat: no-repeat;
+       
+
+        
+        
+        
+     }
+
+     .top{
+        height: 80px;
+        background-color: brown;
+
+     }
+
+     .bottom{
+         height: 80px;
+        background-color:rgba(0, 0, 255, 0.488);
+        margin-top: -200px;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+        font-size: larger;
+       
+
+     }
+     .bottom > p{
+        filter: opacity(100%);
+     }
+     
+
+    </style>
+</head>
+<body>
+    <h3>Filter CSS</h3>
+    <img src="https://cdn.pixabay.com/photo/2022/10/18/06/57/cat-7529439_1280.jpg">
+    <div class="text"><p>MY TEXT</p></div>
+    <h2>Parallax Effect</h2>
+    <div class="top"></div>
+    <section></section>
+    <div class="bottom"><p>This is bottom text</p></div>
+</body>
+</html>
